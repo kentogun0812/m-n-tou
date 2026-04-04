@@ -118,6 +118,39 @@
             text-align: center;
             font-size: 14px;
         }
+
+        .final-section {
+            margin-top: 48px;
+            padding: 24px;
+            background-color: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .final-section p {
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .final-section p:last-child {
+            margin: 24px 0 0 0;
+            padding: 16px;
+            background-color: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--h1-color);
+            border-radius: 4px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .final-section {
+                background-color: #1e293b;
+                border-color: #334155;
+            }
+            .final-section p:last-child {
+                background-color: rgba(245, 158, 11, 0.15);
+            }
+        }
     </style>
 </head>
 <body>
@@ -261,7 +294,7 @@
 
             <div class="sub-section">
                 <span class="sub-title">6.3. Governing Law</span>
-                These Terms are governed by the laws of the State of Wyoming, United States. Any disputes shall be resolved exclusively in the courts located in Sheridan, Wyoming.
+                These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the Company’s primary place of business or the Developer's primary residence is located, without regard to its conflict of law provisions. Any legal action or proceeding arising under these Terms will be brought exclusively in the competent courts located within that same jurisdiction.
             </div>
         </section>
 
@@ -310,12 +343,12 @@
             </div>
         </section>
 
-        <section>
+        <section class="final-section">
             <p>Manga Novus is a technology platform that functions as an information location tool and does not host or store third-party content.</p>
             
             <p>If you have any questions, concerns, or legal inquiries regarding these Terms, please contact us at: <a href="mailto:legal@manganovus.com">legal@manganovus.com</a></p>
             
-            <p style="margin-top: 24px; font-weight: bold;">
+            <p>
                 By continuing to use the Service, you acknowledge that you have read, understood, and agreed to these Terms of Use.
             </p>
         </section>
